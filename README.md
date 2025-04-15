@@ -1,4 +1,3 @@
-
 # 🔐 Quantum RSA Break Demo (Shor Algorithm)
 
 This is an educational, experiment-oriented project demonstrating how **RSA encryption** can be broken by a **quantum algorithm** called **Shor's Algorithm**, simulated using IBM's Qiskit library.
@@ -32,10 +31,16 @@ Due to the computational complexity of quantum simulations on classical hardware
 pip install -r requirements.txt
 ```
 
-### 2. Run the main demo
+### 2. Run the main demo (CLI)
 
 ```bash
 python rsa_shor_input_demo_final.py
+```
+
+### 3. Run the GUI (Streamlit)
+
+```bash
+streamlit run app.py
 ```
 
 You will be prompted to enter a number or a short word to encrypt.
@@ -49,7 +54,9 @@ You will be prompted to enter a number or a short word to encrypt.
 ├── rsa_shor_input_demo_final.py  # Main demo file
 ├── rsa_simulation.py             # Classical RSA example
 ├── shor_algorithm_sim.py         # Standalone Shor algorithm
+├── app.py                        # Streamlit GUI
 ├── requirements.txt              # Needed Python packages
+├── setup_instructions.md         # Setup instructions
 ├── images/                       # Screenshots for README
 ├── data/                         # Optional sample files
 └── archive/                      # Older or experimental versions
@@ -57,7 +64,7 @@ You will be prompted to enter a number or a short word to encrypt.
 
 ---
 
-## 🧪 Example
+## 🧪 Example Run
 
 ```
 🔤 Enter a number or short word to encrypt: 8
@@ -67,6 +74,14 @@ You will be prompted to enter a number or a short word to encrypt.
 🔓 Recovered numeric message: 8
 ✅ Final Decrypted Number: 8
 ```
+
+---
+
+### 🖼 Screenshot of Streamlit GUI
+
+This shows the encryption of a message and quantum factorization via Shor's algorithm using the Streamlit interface.
+
+![Streamlit Demo](images/streamlit_demo.png)
 
 ---
 
